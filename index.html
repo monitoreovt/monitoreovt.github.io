@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92071458d22bf133ec189a8c60537b9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_92071458d22bf133ec189a8c60537b9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92071458d22bf133ec189a8c60537b9c = L.map(
+                "map_92071458d22bf133ec189a8c60537b9c",
+                {
+                    center: [-22.7573219150899, -68.3974040153438],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0e0bee93d4580ac2d8c246cbc661f556 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0e0bee93d4580ac2d8c246cbc661f556.addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var marker_98ae023f6f301eb47198924c5c93f44b = L.marker(
+                [-22.7573219150899, -68.3974040153438],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_cc2f79f073683a5b3565b888eaf0e0ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98ae023f6f301eb47198924c5c93f44b.setIcon(icon_cc2f79f073683a5b3565b888eaf0e0ff);
+        
+    
+        var popup_1216c53ce7ffe4f38f3799e62a965eba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d081d2b033150066b1e0185bdffb3ad = $(`<div id="html_6d081d2b033150066b1e0185bdffb3ad" style="width: 100.0%; height: 100.0%;">ZKM 65 1 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_1216c53ce7ffe4f38f3799e62a965eba.setContent(html_6d081d2b033150066b1e0185bdffb3ad);
+            
+        
+
+        marker_98ae023f6f301eb47198924c5c93f44b.bindPopup(popup_1216c53ce7ffe4f38f3799e62a965eba)
+        ;
+
+        
+    
+    
+            marker_98ae023f6f301eb47198924c5c93f44b.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ce8849f1ccdfa6547a9835445b2c0dc = L.marker(
+                [-22.7717625786167, -68.3843863693122],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_7bbb5fc6ab6c34514521dcfd5c60e68a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ce8849f1ccdfa6547a9835445b2c0dc.setIcon(icon_7bbb5fc6ab6c34514521dcfd5c60e68a);
+        
+    
+        var popup_145f0690df5d955d83b741b6fb40c393 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f1cc7ead80d27bc21cf48012c1971f3 = $(`<div id="html_8f1cc7ead80d27bc21cf48012c1971f3" style="width: 100.0%; height: 100.0%;">ZKM 65 2 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_145f0690df5d955d83b741b6fb40c393.setContent(html_8f1cc7ead80d27bc21cf48012c1971f3);
+            
+        
+
+        marker_2ce8849f1ccdfa6547a9835445b2c0dc.bindPopup(popup_145f0690df5d955d83b741b6fb40c393)
+        ;
+
+        
+    
+    
+            marker_2ce8849f1ccdfa6547a9835445b2c0dc.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77c960e57b3b968cdbac3f7e5645f9be = L.marker(
+                [-22.7695380946036, -68.3756389],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_a0f1471c15fad70175d5e0367c1a917a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77c960e57b3b968cdbac3f7e5645f9be.setIcon(icon_a0f1471c15fad70175d5e0367c1a917a);
+        
+    
+        var popup_38aabf4f26a5aec5b684e4655f07e539 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1581cefd1d648f1e44fbb1903affb621 = $(`<div id="html_1581cefd1d648f1e44fbb1903affb621" style="width: 100.0%; height: 100.0%;">ZKM 65 3 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_38aabf4f26a5aec5b684e4655f07e539.setContent(html_1581cefd1d648f1e44fbb1903affb621);
+            
+        
+
+        marker_77c960e57b3b968cdbac3f7e5645f9be.bindPopup(popup_38aabf4f26a5aec5b684e4655f07e539)
+        ;
+
+        
+    
+    
+            marker_77c960e57b3b968cdbac3f7e5645f9be.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f71d17acce7dd7ca0ba0e89f725ca4d7 = L.marker(
+                [-22.8068021996481, -68.3497885288359],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_4d63a1fc8034a554c239a2a40fbfcc05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f71d17acce7dd7ca0ba0e89f725ca4d7.setIcon(icon_4d63a1fc8034a554c239a2a40fbfcc05);
+        
+    
+        var popup_4d7bd33b1d980f7269a77ee272e6a946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af411d9717511ae34ffeb1cc99df16ec = $(`<div id="html_af411d9717511ae34ffeb1cc99df16ec" style="width: 100.0%; height: 100.0%;">ZKM 71 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_4d7bd33b1d980f7269a77ee272e6a946.setContent(html_af411d9717511ae34ffeb1cc99df16ec);
+            
+        
+
+        marker_f71d17acce7dd7ca0ba0e89f725ca4d7.bindPopup(popup_4d7bd33b1d980f7269a77ee272e6a946)
+        ;
+
+        
+    
+    
+            marker_f71d17acce7dd7ca0ba0e89f725ca4d7.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbc22a2f6f9e57417e9dd04cde644381 = L.marker(
+                [-22.8395819101581, -68.3246792846561],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_06d81cb58a2bb15e02144474111f34b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cbc22a2f6f9e57417e9dd04cde644381.setIcon(icon_06d81cb58a2bb15e02144474111f34b1);
+        
+    
+        var popup_e686dc60e761f34c616c2ace463c6c27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d36d015a4b4db9f95b4b5677e271b745 = $(`<div id="html_d36d015a4b4db9f95b4b5677e271b745" style="width: 100.0%; height: 100.0%;">CKM 77 1 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_e686dc60e761f34c616c2ace463c6c27.setContent(html_d36d015a4b4db9f95b4b5677e271b745);
+            
+        
+
+        marker_cbc22a2f6f9e57417e9dd04cde644381.bindPopup(popup_e686dc60e761f34c616c2ace463c6c27)
+        ;
+
+        
+    
+    
+            marker_cbc22a2f6f9e57417e9dd04cde644381.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a09e49a50d31580bda1f4ffaa986ec26 = L.marker(
+                [-22.8494818093054, -68.3274421865079],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_c1387aba702588a575fffee8e428ac5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a09e49a50d31580bda1f4ffaa986ec26.setIcon(icon_c1387aba702588a575fffee8e428ac5d);
+        
+    
+        var popup_d468cf55a4a39bb14a42f8cd2375605d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc5cd4fbff1f98553ef7db392d045976 = $(`<div id="html_dc5cd4fbff1f98553ef7db392d045976" style="width: 100.0%; height: 100.0%;">CKM 77 2 Velocidad Maxima: 50.0 km/h</div>`)[0];
+                popup_d468cf55a4a39bb14a42f8cd2375605d.setContent(html_dc5cd4fbff1f98553ef7db392d045976);
+            
+        
+
+        marker_a09e49a50d31580bda1f4ffaa986ec26.bindPopup(popup_d468cf55a4a39bb14a42f8cd2375605d)
+        ;
+
+        
+    
+    
+            marker_a09e49a50d31580bda1f4ffaa986ec26.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 50.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f587e997b8d8bf97205382170f0904f6 = L.marker(
+                [-22.9174073704086, -68.2322070846561],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_d61e83cc5f45e93702041c6539f462bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f587e997b8d8bf97205382170f0904f6.setIcon(icon_d61e83cc5f45e93702041c6539f462bd);
+        
+    
+        var popup_c6e9494c2e0f76ded9e9ac8ff10c56af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_113a68ba5dbaebd75e54bed4d658590a = $(`<div id="html_113a68ba5dbaebd75e54bed4d658590a" style="width: 100.0%; height: 100.0%;">CKM 90 Velocidad Maxima: 40.0 km/h</div>`)[0];
+                popup_c6e9494c2e0f76ded9e9ac8ff10c56af.setContent(html_113a68ba5dbaebd75e54bed4d658590a);
+            
+        
+
+        marker_f587e997b8d8bf97205382170f0904f6.bindPopup(popup_c6e9494c2e0f76ded9e9ac8ff10c56af)
+        ;
+
+        
+    
+    
+            marker_f587e997b8d8bf97205382170f0904f6.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 40.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d53b758aad5fb055a7e32741490a536 = L.marker(
+                [-23.0694538746287, -67.5047821865079],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_a8bb3e83f089a0d23cbb673cca1eb7fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d53b758aad5fb055a7e32741490a536.setIcon(icon_a8bb3e83f089a0d23cbb673cca1eb7fa);
+        
+    
+        var popup_5ac6ceaaf43d49c63189829c519e34dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_481629949daf5b98700a2e8d42275316 = $(`<div id="html_481629949daf5b98700a2e8d42275316" style="width: 100.0%; height: 100.0%;">ZKM 96 Velocidad Maxima: 40.0 km/h</div>`)[0];
+                popup_5ac6ceaaf43d49c63189829c519e34dc.setContent(html_481629949daf5b98700a2e8d42275316);
+            
+        
+
+        marker_5d53b758aad5fb055a7e32741490a536.bindPopup(popup_5ac6ceaaf43d49c63189829c519e34dc)
+        ;
+
+        
+    
+    
+            marker_5d53b758aad5fb055a7e32741490a536.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 40.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20512bae29cdbe614221106deb399c32 = L.marker(
+                [-23.0577587526608, -67.5109532730158],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_239485ed8e48113cb20ace6f3fe027e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20512bae29cdbe614221106deb399c32.setIcon(icon_239485ed8e48113cb20ace6f3fe027e2);
+        
+    
+        var popup_a51bf714486c03a76b72db72f328f5c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68f3a2047d5eb9ee052654443bc0fef6 = $(`<div id="html_68f3a2047d5eb9ee052654443bc0fef6" style="width: 100.0%; height: 100.0%;">ZKM 97 Velocidad Maxima: 35.0 km/h</div>`)[0];
+                popup_a51bf714486c03a76b72db72f328f5c5.setContent(html_68f3a2047d5eb9ee052654443bc0fef6);
+            
+        
+
+        marker_20512bae29cdbe614221106deb399c32.bindPopup(popup_a51bf714486c03a76b72db72f328f5c5)
+        ;
+
+        
+    
+    
+            marker_20512bae29cdbe614221106deb399c32.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 35.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44202cfab4a9e8fa9a27a623e43ab199 = L.marker(
+                [-23.0491778469839, -67.5056136306877],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_b654fe4522f2271cb0c8f3ce5dd7664d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44202cfab4a9e8fa9a27a623e43ab199.setIcon(icon_b654fe4522f2271cb0c8f3ce5dd7664d);
+        
+    
+        var popup_5388ab85891bc3d57504b64488619139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b8e3243924a76f0e6716393e5de412e = $(`<div id="html_8b8e3243924a76f0e6716393e5de412e" style="width: 100.0%; height: 100.0%;">ZKM 98 Velocidad Maxima: 30.0 km/h</div>`)[0];
+                popup_5388ab85891bc3d57504b64488619139.setContent(html_8b8e3243924a76f0e6716393e5de412e);
+            
+        
+
+        marker_44202cfab4a9e8fa9a27a623e43ab199.bindPopup(popup_5388ab85891bc3d57504b64488619139)
+        ;
+
+        
+    
+    
+            marker_44202cfab4a9e8fa9a27a623e43ab199.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 30.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ece68719797f2213ec57c4c41007e06e = L.marker(
+                [-23.2251101903234, -67.0741199730157],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_2671ff0332cc61f2412fae18c6c6582b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ece68719797f2213ec57c4c41007e06e.setIcon(icon_2671ff0332cc61f2412fae18c6c6582b);
+        
+    
+        var popup_41059ac5185190f24b9294b0b96599b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32d5b62ca940967eeac501c8b9c4eabb = $(`<div id="html_32d5b62ca940967eeac501c8b9c4eabb" style="width: 100.0%; height: 100.0%;">ZKM 154 Velocidad Maxima: 40.0 km/h</div>`)[0];
+                popup_41059ac5185190f24b9294b0b96599b6.setContent(html_32d5b62ca940967eeac501c8b9c4eabb);
+            
+        
+
+        marker_ece68719797f2213ec57c4c41007e06e.bindPopup(popup_41059ac5185190f24b9294b0b96599b6)
+        ;
+
+        
+    
+    
+            marker_ece68719797f2213ec57c4c41007e06e.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 40.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18122311505cb577837ab14eee0288bc = L.marker(
+                [-23.4468685840834, -66.3204854595236],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_a22319a2bff42b92f5eee6f8a5b55abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18122311505cb577837ab14eee0288bc.setIcon(icon_a22319a2bff42b92f5eee6f8a5b55abb);
+        
+    
+        var popup_9e272711181fafae35bb9d930e42fe17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffb2789d4f56d51046cdf5549d7b0fe0 = $(`<div id="html_ffb2789d4f56d51046cdf5549d7b0fe0" style="width: 100.0%; height: 100.0%;">CKM 121 Velocidad Maxima: 40.0 km/h</div>`)[0];
+                popup_9e272711181fafae35bb9d930e42fe17.setContent(html_ffb2789d4f56d51046cdf5549d7b0fe0);
+            
+        
+
+        marker_18122311505cb577837ab14eee0288bc.bindPopup(popup_9e272711181fafae35bb9d930e42fe17)
+        ;
+
+        
+    
+    
+            marker_18122311505cb577837ab14eee0288bc.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 40.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5e7a0502ca34bd0f51ecc0cf30a43c1 = L.marker(
+                [-23.4308748408217, -66.2703308693122],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_5775b3baab328a3784de39e05ecb3f15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5e7a0502ca34bd0f51ecc0cf30a43c1.setIcon(icon_5775b3baab328a3784de39e05ecb3f15);
+        
+    
+        var popup_ad076f3576a754fa3212e83859e58e8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8308abdb6b99e30db82dcd2773a96df2 = $(`<div id="html_8308abdb6b99e30db82dcd2773a96df2" style="width: 100.0%; height: 100.0%;">CKM 111 Velocidad Maxima: 30.0 km/h</div>`)[0];
+                popup_ad076f3576a754fa3212e83859e58e8e.setContent(html_8308abdb6b99e30db82dcd2773a96df2);
+            
+        
+
+        marker_a5e7a0502ca34bd0f51ecc0cf30a43c1.bindPopup(popup_ad076f3576a754fa3212e83859e58e8e)
+        ;
+
+        
+    
+    
+            marker_a5e7a0502ca34bd0f51ecc0cf30a43c1.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 30.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e36f5731509efdce5d239e9e39046d67 = L.marker(
+                [-23.691419310387, -65.6323630558201],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_896286dcdab2b0f189da4876998515e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e36f5731509efdce5d239e9e39046d67.setIcon(icon_896286dcdab2b0f189da4876998515e2);
+        
+    
+        var popup_cea94eaa94f827097c7c2f29330d429a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83e7954a03437d14a604fbc0ab906f39 = $(`<div id="html_83e7954a03437d14a604fbc0ab906f39" style="width: 100.0%; height: 100.0%;">CKM33 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_cea94eaa94f827097c7c2f29330d429a.setContent(html_83e7954a03437d14a604fbc0ab906f39);
+            
+        
+
+        marker_e36f5731509efdce5d239e9e39046d67.bindPopup(popup_cea94eaa94f827097c7c2f29330d429a)
+        ;
+
+        
+    
+    
+            marker_e36f5731509efdce5d239e9e39046d67.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_761f97ed1bde663ab802e21935d03ac9 = L.marker(
+                [-23.690313330404, -65.633867442328],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_f8e284f3fcf9b728ce8527ecdfafe73d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_761f97ed1bde663ab802e21935d03ac9.setIcon(icon_f8e284f3fcf9b728ce8527ecdfafe73d);
+        
+    
+        var popup_81e1cc06b4fbfcbce562fc95db9d3358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e79bcef3d411578b13e81bcc0fea3a53 = $(`<div id="html_e79bcef3d411578b13e81bcc0fea3a53" style="width: 100.0%; height: 100.0%;">CKM33 2 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_81e1cc06b4fbfcbce562fc95db9d3358.setContent(html_e79bcef3d411578b13e81bcc0fea3a53);
+            
+        
+
+        marker_761f97ed1bde663ab802e21935d03ac9.bindPopup(popup_81e1cc06b4fbfcbce562fc95db9d3358)
+        ;
+
+        
+    
+    
+            marker_761f97ed1bde663ab802e21935d03ac9.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3009c306ca95f52e8021700cbcaa0372 = L.marker(
+                [-23.6805616401436, -65.6293333],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_3091746ef665af97d3dfac1f2a4f979c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3009c306ca95f52e8021700cbcaa0372.setIcon(icon_3091746ef665af97d3dfac1f2a4f979c);
+        
+    
+        var popup_613335c1e1a394a12f4383ba1d758b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d237b36415b491b13aabca57b018b0c = $(`<div id="html_8d237b36415b491b13aabca57b018b0c" style="width: 100.0%; height: 100.0%;">MIRADOR DEL LIPAN 2 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_613335c1e1a394a12f4383ba1d758b38.setContent(html_8d237b36415b491b13aabca57b018b0c);
+            
+        
+
+        marker_3009c306ca95f52e8021700cbcaa0372.bindPopup(popup_613335c1e1a394a12f4383ba1d758b38)
+        ;
+
+        
+    
+    
+            marker_3009c306ca95f52e8021700cbcaa0372.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00cb4efd2329396e03d1b45d51fdf4ee = L.marker(
+                [-23.6852791486539, -65.6286067134921],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_950c639b258dc45386f745a195b2926f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00cb4efd2329396e03d1b45d51fdf4ee.setIcon(icon_950c639b258dc45386f745a195b2926f);
+        
+    
+        var popup_39c80220a3a1694947b3d379b442b81e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_610f541bd1d467afa85bd258ae281297 = $(`<div id="html_610f541bd1d467afa85bd258ae281297" style="width: 100.0%; height: 100.0%;">MIRADOR DEL LIPAN 1 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_39c80220a3a1694947b3d379b442b81e.setContent(html_610f541bd1d467afa85bd258ae281297);
+            
+        
+
+        marker_00cb4efd2329396e03d1b45d51fdf4ee.bindPopup(popup_39c80220a3a1694947b3d379b442b81e)
+        ;
+
+        
+    
+    
+            marker_00cb4efd2329396e03d1b45d51fdf4ee.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8cb37320405b109eac87a595f6ad734 = L.marker(
+                [-23.6800565100369, -65.6279078269842],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_e5ea83c2efe97a3f9732fa80de5cf054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8cb37320405b109eac87a595f6ad734.setIcon(icon_e5ea83c2efe97a3f9732fa80de5cf054);
+        
+    
+        var popup_fe1b7a6cfc72b3b5c096eb842526a36e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1343ac21fd6ae811904b8ca856ec9820 = $(`<div id="html_1343ac21fd6ae811904b8ca856ec9820" style="width: 100.0%; height: 100.0%;">MIRADOR DEL LIPAN 3 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_fe1b7a6cfc72b3b5c096eb842526a36e.setContent(html_1343ac21fd6ae811904b8ca856ec9820);
+            
+        
+
+        marker_d8cb37320405b109eac87a595f6ad734.bindPopup(popup_fe1b7a6cfc72b3b5c096eb842526a36e)
+        ;
+
+        
+    
+    
+            marker_d8cb37320405b109eac87a595f6ad734.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22d43ce2027d96e0807448af2971a4fe = L.marker(
+                [-23.6792218656394, -65.6178421730157],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_e9a780492f163bf01db80e29879f7de1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22d43ce2027d96e0807448af2971a4fe.setIcon(icon_e9a780492f163bf01db80e29879f7de1);
+        
+    
+        var popup_a9ee4657168ea0647b62a4bedba00bba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2114f4d755e111c93211d786eea6922 = $(`<div id="html_c2114f4d755e111c93211d786eea6922" style="width: 100.0%; height: 100.0%;">MIRADOR DEL LIPAN 4 Velocidad Maxima: 20.0 km/h</div>`)[0];
+                popup_a9ee4657168ea0647b62a4bedba00bba.setContent(html_c2114f4d755e111c93211d786eea6922);
+            
+        
+
+        marker_22d43ce2027d96e0807448af2971a4fe.bindPopup(popup_a9ee4657168ea0647b62a4bedba00bba)
+        ;
+
+        
+    
+    
+            marker_22d43ce2027d96e0807448af2971a4fe.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 20.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bbcb396d2d55b039763d6d8271e16e3 = L.marker(
+                [-23.6770568399964, -65.6087070846561],
+                {}
+            ).addTo(map_92071458d22bf133ec189a8c60537b9c);
+        
+    
+            var icon_11c5261cb3912789299b019adc7ffea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0bbcb396d2d55b039763d6d8271e16e3.setIcon(icon_11c5261cb3912789299b019adc7ffea0);
+        
+    
+        var popup_8ff05d7e45cc5e832a2d57e29cb897e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56f8afd689e71defc85c200bb453a2fe = $(`<div id="html_56f8afd689e71defc85c200bb453a2fe" style="width: 100.0%; height: 100.0%;">EL HORNITO 1 Velocidad Maxima: 25.0 km/h</div>`)[0];
+                popup_8ff05d7e45cc5e832a2d57e29cb897e7.setContent(html_56f8afd689e71defc85c200bb453a2fe);
+            
+        
+
+        marker_0bbcb396d2d55b039763d6d8271e16e3.bindPopup(popup_8ff05d7e45cc5e832a2d57e29cb897e7)
+        ;
+
+        
+    
+    
+            marker_0bbcb396d2d55b039763d6d8271e16e3.bindTooltip(
+                `<div>
+                     Velocidad Maxima: 25.0 km/h
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
